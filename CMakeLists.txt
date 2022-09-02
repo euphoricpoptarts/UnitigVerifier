@@ -11,4 +11,6 @@ find_package (seqan3 3.0 REQUIRED)
  
 # build app with seqan3
 add_executable (unitig_verify verify_unitigs.cpp)
+add_executable (unitig_canonize canonize_unitigs.cpp)
 target_link_libraries (unitig_verify seqan3::seqan3)
+target_link_libraries (unitig_canonize seqan3::seqan3)
